@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>موقع ايدو للإعلانات المبوبة</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-image: url('lah.PNG');
+      background-size: 400px ;
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    .floating-image {
+      position: absolute;
+      width: 200px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .floating-image:hover {
+      transform: scale(1.1);
+      z-index: 2;
+    }
+
+    .product-container {
+      position: absolute;
+      display: inline-block;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .product-info {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      box-sizing: border-box;
+      border-radius: 0 0 30px 30px;
+      bottom: -50px;
+      right: 0;
+      box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    }
+
+    .product-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .product-price {
+      color: #e74c3c;
+      font-weight: bold;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0px); }
+    }
+
+    @media (max-width: 600px) {
+      .floating-image {
+        width: 80px;
+        height: 80px;
+      }
+      .product-info {
+        font-size: 10px;
+        bottom: -30px;
+        padding: 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="product-container" style="top: 20%; left: 33%;">
+    <a href="https://www.idu-shop.com" target="_blank">
+      <img class="floating-image" src="aas.jpg" />
+    </a>
+    <div class="product-info">
+      <div class="product-title">ازياء وعطور</div>
+      <div class="product-price"> 25 الف  </div>
+    </div>
+  </div>
+
+  <div class="product-container" style="top: 30%; left: 60%;">
+    <a href="https://www.idu-shop.com" target="_blank">
+      <img class="floating-image" src="gmc.jpg" />
+    </a>
+    <div class="product-info">
+      <div class="product-title">سيارة GMC</div>
+      <div class="product-price">60 الف</div>
+    </div>
+  </div>
+
+  <div class="product-container" style="top: 65%; left: 25%;">
+    <a href="https://www.idu-shop.com" target="_blank">
+      <img class="floating-image" src="sep.jpg" />
+    </a>
+    <div class="product-info">
+      <div class="product-title">مكيف سبليت</div>
+      <div class="product-price">200 الف</div>
+    </div>
+  </div>
+
+  <div class="product-container" style="top: 70%; left: 70%;">
+    <a href="https://www.idu-shop.com" target="_blank">
+      <img class="floating-image" src="fer.jpg" />
+    </a>
+    <div class="product-info">
+      <div class="product-title">اثاث منزلي</div>
+      <div class="product-price"> 500 الف </div>
+    </div>
+  </div>
+
+  <div class="product-container" style="top: 22%; left: 80%;">
+    <a href="https://www.idu-shop.com" target="_blank">
+      <img class="floating-image" src="hom.jpg" />
+    </a>
+    <div class="product-info">
+      <div class="product-title"> بيت للبيع في اربيل </div>
+      <div class="product-price">  50 الف دولار </div>
+    </div>
+  </div>
+
+  <div class="product-container" style="top: 55%; left: 45%;">
+    <a href="https://www.idu-shop.com" target="_blank">
+      <img class="floating-image" src="bus.PNG" />
+    </a>
+    <div class="product-info">
+      <div class="product-title"> خطوط طلاب و موظفين </div>
+      <div class="product-price"> اسعار حسب الاتفاق 100 دينار </div>
+    </div>
+  </div>
+
+</body>
+</html>
